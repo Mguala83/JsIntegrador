@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrados JS</title>
+</head>
+
+<body>
+    <header class="main-header">
+      <div class="menu">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre Nosotros</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Noticias</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+          <h1>Bienvenido a Nuestra Página de Noticias</h1>
+          <p>La fuente confiable para mantenerse informado.</p>
+          <a href="#noticias" class="btn-hero">Ver Noticias</a>
+        </div>
+      </section>
+    
+      <section class="about-us">
+        <div class="about-content">
+          <h2>Sobre Nosotros</h2>
+          <p>Somos un equipo apasionado de periodistas y escritores comprometidos en proporcionar noticias precisas y relevantes a nuestra audiencia.</p>
+          <p>Nuestra misión es mantenerte informado sobre los eventos más importantes en el mundo, desde tecnología hasta deportes y más.</p>
+        </div>
+      </section>
+    
+    <section class="news-section">
+      <h2>Noticias</h2>
+      <div class="category-filter">
+        <button class="filter-btn" data-category="Todos">Todos</button>
+        <button class="filter-btn" data-category="Política">Política</button>
+        <button class="filter-btn" data-category="Tecnología">Tecnología</button>
+        <button class="filter-btn" data-category="Deportes">Deportes</button>
+        <!-- Agrega más botones de filtro para otras categorías -->
+      </div>
+      <div class="news-list">
+        <!-- Aquí se renderizarán las noticias dinámicamente con JavaScript -->
+      </div>
+      
+    </section>
+    
+    <section class="favorites-section">
+      <h2>Mis Noticias Favoritas</h2>
+      <div class="favorites-list"> <!-- Asegúrate de tener este elemento div para mostrar las noticias favoritas -->
+        <!-- Aquí se mostrarán las noticias favoritas -->
+      </div>
+    </section>
+    
+    <section class="contact-section">
+      <h2>Contacto</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="form-messages" id="form-messages"></div>
+    </section>
+    
+    <footer class="main-footer">
+      <!-- Contenido del footer -->
+    </footer>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
